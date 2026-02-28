@@ -74,3 +74,13 @@ with tab3:
         st.table(data)
     else:
         st.info("No patients saved yet.")
+        # ---------- FORCE STREAMLIT START ----------
+if __name__ == "__main__":
+    import streamlit.web.bootstrap as bootstrap
+
+    bootstrap.run(
+        "app.py",
+        "",
+        [],
+        {}
+    )
